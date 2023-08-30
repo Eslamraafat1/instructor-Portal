@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Harvest</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+  <!-- Icons CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Sidebar CSS--> 
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <!-- Animation-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet" />
+
+
+</head>
+<style>
+  .zero {
+    font-size: 12px;
+    border-radius: 10px;
+
+  }
+
+  .three {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+
+  }
+
+  .class th {
+    background-color: #226889c2;
+    color: white;
+    /* text-transform: uppercase !important; */
+
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 15px;
+  }
+</style>
+<style class="cp-pen-styles">
+  .bodyy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2c3e50;
+    font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1px;
+    color: #32465a;
+    text-rendering: optimizeLegibility;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #frame {
+    width: 95%;
+    min-width: 360px;
+    max-width: 1000px;
+    height: 92vh;
+    min-height: 300px;
+    max-height: 720px;
+    background: #E6EAEA;
+  }
+
+  @media screen and (max-width: 360px) {
+    #frame {
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  #frame #sidepanel {
+    float: left;
+    min-width: 280px;
+    max-width: 340px;
+    width: 40%;
+    height: 100%;
+    background: #003058;
+    color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel {
+      width: 58px;
+      min-width: 58px;
+    }
+  }
+
+  #frame #sidepanel #profile {
+    width: 80%;
+    margin: 25px auto;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile {
+      width: 100%;
+      margin: 0 auto;
+      padding: 5px 0 0 0;
+      background: #32465a;
+    }
+  }
+
+  #frame #sidepanel #profile.expanded .wrap {
+    height: 210px;
+    line-height: initial;
+  }
+
+  #frame #sidepanel #profile.expanded .wrap p {
+    margin-top: 20px;
+  }
+
+  #frame #sidepanel #profile.expanded .wrap i.expand-button {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  #frame #sidepanel #profile .wrap {
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+    -moz-transition: 0.3s height ease;
+    -o-transition: 0.3s height ease;
+    -webkit-transition: 0.3s height ease;
+    transition: 0.3s height ease;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap {
+      height: 55px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap img {
+    width: 50px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #e74c3c;
+    height: auto;
+    float: left;
+    cursor: pointer;
+    -moz-transition: 0.3s border ease;
+    -o-transition: 0.3s border ease;
+    -webkit-transition: 0.3s border ease;
+    transition: 0.3s border ease;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap img {
+      width: 40px;
+      margin-left: 4px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap img.online {
+    border: 2px solid #2ecc71;
+  }
+
+  #frame #sidepanel #profile .wrap img.away {
+    border: 2px solid #f1c40f;
+  }
+
+  #frame #sidepanel #profile .wrap img.busy {
+    border: 2px solid #e74c3c;
+  }
+
+  #frame #sidepanel #profile .wrap img.offline {
+    border: 2px solid #95a5a6;
+  }
+
+  #frame #sidepanel #profile .wrap p {
+    float: left;
+    margin-left: 15px;
+    font-size: 18px !important;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap p {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap i.expand-button {
+    float: right;
+    margin-top: 23px;
+    font-size: 0.8em;
+    font-size: 15px;
+    cursor: pointer;
+    color: #435f7a;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap i.expand-button {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 150px;
+    margin: 70px 0 0 0;
+    border-radius: 6px;
+    z-index: 99;
+    line-height: initial;
+    background: #435f7a;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options {
+      width: 58px;
+      margin-top: 57px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options.active {
+    opacity: 1;
+    visibility: visible;
+    margin: 75px 0 0 0;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options.active {
+      margin-top: 62px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #435f7a;
+    margin: -8px 0 0 24px;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options:before {
+      margin-left: 23px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul {
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li {
+    padding: 15px 0 30px 18px;
+    display: block;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options ul li {
+      padding: 15px 0 35px 22px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li:hover {
+    background: #496886;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px 0 0 0;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin: -3px 0 0 -3px;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li p {
+    padding-left: 12px;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #profile .wrap #status-options ul li p {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {
+    background: #2ecc71;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {
+    border: 1px solid #2ecc71;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {
+    background: #f1c40f;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {
+    border: 1px solid #f1c40f;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {
+    background: #e74c3c;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {
+    border: 1px solid #e74c3c;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {
+    background: #95a5a6;
+  }
+
+  #frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {
+    border: 1px solid #95a5a6;
+  }
+
+  #frame #sidepanel #profile .wrap #expanded {
+    padding: 100px 0 0 0;
+    display: block;
+    line-height: initial !important;
+  }
+
+  #frame #sidepanel #profile .wrap #expanded label {
+    float: left;
+    clear: both;
+    margin: 0 8px 5px 0;
+    padding: 5px 0;
+  }
+
+  #frame #sidepanel #profile .wrap #expanded input {
+    border: none;
+    margin-bottom: 6px;
+    background: #32465a;
+    border-radius: 3px;
+    color: #f5f5f5;
+    padding: 7px;
+    width: calc(100% - 43px);
+  }
+
+  #frame #sidepanel #profile .wrap #expanded input:focus {
+    outline: none;
+    background: #435f7a;
+  }
+
+  #frame #sidepanel #search {
+    border-top: 1px solid #32465a;
+    border-bottom: 1px solid #32465a;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #search {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #search label {
+    position: absolute;
+    margin: 10px 0 0 20px;
+  }
+
+  #frame #sidepanel #search input {
+    font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+    padding: 10px 0 10px 46px;
+    width: calc(100% - 2px);
+    border: none;
+    background: #112333;
+    color: #f5f5f5;
+  }
+
+  #frame #sidepanel #search input:focus {
+    outline: none;
+    background: #435f7a;
+  }
+
+  #frame #sidepanel #search input::-webkit-input-placeholder {
+    color: #f5f5f5;
+  }
+
+  #frame #sidepanel #search input::-moz-placeholder {
+    color: #f5f5f5;
+  }
+
+  #frame #sidepanel #search input:-ms-input-placeholder {
+    color: #f5f5f5;
+  }
+
+  #frame #sidepanel #search input:-moz-placeholder {
+    color: #f5f5f5;
+  }
+
+  #frame #sidepanel #contacts {
+    height: calc(100% - 177px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+    
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+  background: #112333 !important; 
+  border-radius: 10px;
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar-thumb:hover {
+  background: #8f9196 !important; 
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar {
+  width: 12px !important;
+}
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #contacts {
+      height: calc(100% - 149px);
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    #frame #sidepanel #contacts::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #contacts.expanded {
+    height: calc(100% - 334px);
+  }
+
+  #frame #sidepanel #contacts::-webkit-scrollbar {
+    width: 8px;
+    background: #2c3e50;
+  }
+
+  #frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+    background-color: #243140;
+  }
+
+  #frame #sidepanel #contacts ul li.contact {
+    position: relative;
+    padding: 10px 0 15px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-size: 12px !important;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #contacts ul li.contact {
+      padding: 6px 0 46px 8px;
+    }
+  }
+
+  #frame #sidepanel #contacts ul li.contact:hover {
+    background: #32465a;
+  }
+
+  #frame #sidepanel #contacts ul li.contact.active {
+    background: #112333;
+    border-right: 5px solid #435f7a;
+  }
+
+  #frame #sidepanel #contacts ul li.contact.active span.contact-status {
+    border: 2px solid #32465a !important;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap {
+    width: 88%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #contacts ul li.contact .wrap {
+      width: 100%;
+    }
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap span {
+    position: absolute;
+    left: 0;
+    margin: -2px 0 0 -2px;
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #2c3e50;
+    background: #95a5a6;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap span.online {
+    background: #2ecc71;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap span.away {
+    background: #f1c40f;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap span.busy {
+    background: #e74c3c;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap img {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #contacts ul li.contact .wrap img {
+      margin-right: 0px;
+    }
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap .meta {
+    padding: 5px 0 0 0;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #contacts ul li.contact .wrap .meta {
+      display: none;
+    }
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+    font-weight: 600;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+    margin: 5px 0 0 0;
+    padding: 0 0 1px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+  }
+
+  #frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {
+    position: initial;
+    border-radius: initial;
+    background: none;
+    border: none;
+    padding: 0 2px 0 0;
+    margin: 0 0 0 1px;
+    opacity: .5;
+  }
+
+  #frame #sidepanel #bottom-bar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  #frame #sidepanel #bottom-bar button {
+    float: left;
+    border: none;
+    width: 50%;
+    padding: 10px 0;
+    background: #112333;
+    color: #f5f5f5;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #bottom-bar button {
+      float: none;
+      width: 100%;
+      padding: 15px 0;
+    }
+  }
+
+  #frame #sidepanel #bottom-bar button:focus {
+    outline: none;
+  }
+
+  #frame #sidepanel #bottom-bar button:nth-child(1) {
+    border-right: 1px solid #2c3e50;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #bottom-bar button:nth-child(1) {
+      border-right: none;
+      border-bottom: 1px solid #2c3e50;
+    }
+  }
+
+  #frame #sidepanel #bottom-bar button:hover {
+    background: #435f7a;
+  }
+
+  #frame #sidepanel #bottom-bar button i {
+    margin-right: 3px;
+    font-size: 1em;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #bottom-bar button i {
+      font-size: 1.3em;
+    }
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame #sidepanel #bottom-bar button span {
+      display: none;
+    }
+  }
+
+  #frame .content {
+    float: right;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame .content {
+      width: calc(100% - 58px);
+      min-width: 300px !important;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    #frame .content {
+      width: calc(100% - 340px);
+    }
+  }
+
+  #frame .content .contact-profile {
+    width: 100%;
+    height: 60px;
+    /* line-height: 60px; */
+    background: #f5f5f5;
+  }
+
+  #frame .content .contact-profile img {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin: 9px 12px 0 9px;
+  }
+
+  #frame .content .contact-profile p {
+    float: left;
+  }
+
+  #frame .content .contact-profile .social-media {
+    float: right;
+  }
+
+  #frame .content .contact-profile .social-media i {
+    margin-left: 14px;
+    cursor: pointer;
+  }
+
+  #frame .content .contact-profile .social-media i:nth-last-child(1) {
+    margin-right: 20px;
+  }
+
+  #frame .content .contact-profile .social-media i:hover {
+    color: #435f7a;
+  }
+
+  #frame .content .messages {
+    height: auto;
+    min-height: calc(100% - 93px);
+    max-height: calc(100% - 93px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame .content .messages {
+      max-height: calc(100% - 105px);
+    }
+  }
+
+  #frame .content .messages::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+
+  #frame .content .messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #frame .content .messages ul li {
+    display: inline-block;
+    clear: both;
+    float: left;
+    margin: 15px 15px 5px 0px;
+    width: calc(100% - 25px);
+    font-size: 14px;
+  }
+
+  #frame .content .messages ul li:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+
+  #frame .content .messages ul li.sent img {
+    margin: 6px 8px 0 0;
+  }
+
+  #frame .content .messages ul li.sent p {
+    background: #435f7a;
+    color: #f5f5f5;
+  }
+
+  #frame .content .messages ul li.replies img {
+    float: right;
+    margin: 6px 0 0 8px;
+  }
+
+  #frame .content .messages ul li.replies p {
+    background: #f5f5f5;
+    float: right;
+  }
+
+  #frame .content .messages ul li img {
+    width: 22px;
+    border-radius: 50%;
+    float: left;
+  }
+
+  #frame .content .messages ul li p {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 205px;
+    line-height: 130%;
+  }
+
+  @media screen and (min-width: 735px) {
+    #frame .content .messages ul li p {
+      max-width: 300px;
+    }
+  }
+
+  #frame .content .message-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  #frame .content .message-input .wrap {
+    position: relative;
+  }
+
+  #frame .content .message-input .wrap input {
+    font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+    float: left;
+    border: none;
+    width: calc(100% - 55px);
+    padding: 11px 32px 10px 8px;
+    font-size: 15px;
+    color: #32465a;
+    margin-top: 6px;
+    margin-left: 4px;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame .content .message-input .wrap input {
+      padding: 15px 32px 16px 8px;
+    }
+  }
+
+  #frame .content .message-input .wrap input:focus {
+    outline: none;
+  }
+
+  #frame .content .message-input .wrap .attachment {
+    position: absolute;
+    right: 60px;
+    z-index: 4;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #435f7a;
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame .content .message-input .wrap .attachment {
+      margin-top: 17px;
+      right: 65px;
+    }
+  }
+
+  #frame .content .message-input .wrap .attachment:hover {
+    opacity: 1;
+  }
+
+  #frame .content .message-input .wrap button {
+    float: right;
+    border: none;
+    width: 50px;
+    padding: 12px 0;
+    cursor: pointer;
+    background: #32465a;
+    color: #f5f5f5;
+    margin-top: 5px;
+  }
+
+  @media screen and (max-width: 735px) {
+    #frame .content .message-input .wrap button {
+      padding: 16px 0;
+    }
+  }
+
+  #frame .content .message-input .wrap button:hover {
+    background: #435f7a;
+  }
+
+  #frame .content .message-input .wrap button:focus {
+    outline: none;
+  }
+  li{
+
+    list-style: none;
+  }
+  .facee{
+    font-size: 15px !important;
+    margin-top: 4px;
+  }
+  .contacta{
+    font-size: 15px;
+  }
+  .chatt{
+    /* margin-top: -10px; */
+  }
+  .fontaa{
+    font-size: 15px !important;
+
+  }
+
+</style>
+
+
+<body class="bg-theme bg-theme1 bodyy">
+
+  <!-- start loader -->
+  <div id="pageloader-overlay" class="visible incoming">
+    <div class="loader-wrapper-outer">
+      <div class="loader-wrapper-inner">
+        <div class="loader"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end loader -->
+
+  <!-- Start wrapper-->
+  <div id="wrapper">
+
+    <!--Start sidebar-wrapper-->
+    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+      <div class="brand-logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" class="logo-icon" alt="logo icon">
+
+
+          <h5 class="logo-text ">Instructor's</h5>
+        </a>
+      </div>
+      <ul class="sidebar-menu do-nicescrol">
+        <li class="sidebar-header text-center text-white insto  "> <span><img src="assets/images/Capture.PNG"
+              class="w-25 border-radiusss " alt=""></span> Mahmoud Sultan</li>
+        <hr>
+        <li>
+          <a href="index.html">
+            <i class="zmdi zmdi-view-dashboard"></i> <span>Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html">
+            <i class="zmdi zmdi-invert-colors"></i> <span>My Profile</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="forms.html">
+            <i class="zmdi zmdi-format-list-bulleted"></i> <span>My Schedule
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="tables.html">
+            <i class="zmdi zmdi-grid"></i> <span>My Classes</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="calendar.html">
+            <i class="zmdi zmdi-calendar-check"></i> <span>Attendance</span>
+            <small class="badge float-right badge-light">New</small>
+          </a>
+        </li>
+
+        <li>
+          <a href="icon.html">
+            <i class="zmdi zmdi-face"></i> <span>Exam Result</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="logiin.html">
+            <i class="zmdi zmdi-lock"></i> <span>Final Rate</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="ratio.html">
+            <i class="zmdi zmdi-account-circle"></i> <span>Ratio Reporting</span>
+          </a>
+        </li>
+        <li>
+          <a href="textChat.html">
+            <i class="fa-solid fa-comments"></i> <span>Group Chat</span>
+          </a>
+        </li>
+
+        <!-- <li class="sidebar-header">LABELS</li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li> -->
+
+      </ul>
+
+    </div>
+    <!--End sidebar-wrapper-->
+
+    <!--Start topbar header-->
+    <header class="topbar-nav">
+      <nav class="navbar navbar-expand fixed-top">
+       <ul class="navbar-nav mr-auto align-items-center">
+         <li class="nav-item">
+           <a class="nav-link toggle-menu" href="javascript:void();">
+            <i class="icon-menu menu-icon"></i>
+          </a>
+         </li>
+         <li class="nav-item">
+           <form class="search-bar">
+             <input type="text" class="form-control" placeholder="Enter keywords">
+              <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+           </form>
+         </li>
+       </ul>
+          
+       <ul class="navbar-nav align-items-center right-nav-link">
+        
+         <!-- <li class="nav-item dropdown-lg">
+           <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
+           <i class="fa fa-bell-o"></i></a>
+         </li> -->
+         <li class="nav-item">
+          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+            <span class="user-profile"><i class="fa fa-envelope-open-o"></i></span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right spelt">
+           <li class="dropdown-item user-details">
+            <a href="javaScript:void();">
+               <div class="media">
+                <div class="media-body">
+                </div>
+               </div>
+              </a>
+            </li>
+            <li>
+              <div class="text-center">
+                <h5 class="">Messages</h5>
+              </div>
+              <hr class="bg-info ">
+              <li>
+                <p class=" ml-2">1- Today another </p>
+              </li>
+              <li>
+                <p class=" ml-2 mr-2">2- Lorem, ipsum dolor sit   </p>
+              </li>
+              
+              
+            </li>
+          
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+            <span class="user-profile"><i class="fa fa-bell-o"></i></span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right spelt">
+           <li class="dropdown-item user-details">
+            <a href="javaScript:void();">
+               <div class="media">
+                <div class="media-body">
+                </div>
+               </div>
+              </a>
+            </li>
+            <li>
+              <div class="text-center">
+                <h5 class="">Notificaitons</h5>
+              </div>
+              <hr class="bg-info ">
+              <li>
+                <p class=" ml-2">1- Today another course</p>
+              </li>
+              <li>
+                <p class=" ml-2 mr-2">2- Lorem, ipsum dolor sit amet consectetur </p>
+              </li>
+              
+              
+            </li>
+          
+          </ul>
+        </li>
+     
+         
+         
+         <!-- <li class="nav-item language">
+           <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
+           <ul class="dropdown-menu dropdown-menu-right">
+               
+           </ul>
+         </li> -->
+         <li class="nav-item">
+           <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+             <span class="user-profile"><img src="assets/images/Capture.PNG" class="img-circle" alt="user avatar"></span>
+           </a>
+           <ul class="dropdown-menu dropdown-menu-right">
+            <li class="dropdown-item user-details">
+             <a href="profile.html">
+                <div class="media">
+                  <div class="avatar"><img class="align-self-start mr-3" src="assets/images/Capture.PNG" alt="user avatar"></div>
+                 <div class="media-body">
+                 <h6 class="mt-2 user-title">Mahmoud Sultan</h6>
+                 <p class="user-subtitle">Mahmoud.32@example.com</p>
+                 </div>
+                </div>
+               </a>
+             </li>
+             <li class="dropdown-divider"></li>
+             <a href="textChat.html">
+                 <li class="dropdown-item">
+                <i class="icon-envelope mr-2"></i>
+                Inbox
+              </li>
+              </a> 
+             <li class="dropdown-divider"></li>
+             <a href="profile.html">
+                <li class="dropdown-item"><i class="icon-wallet mr-2"></i>
+                Account
+              </li>
+              </a>  
+             <li class="dropdown-divider"></li>
+             <!-- <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li> -->
+             <li class="dropdown-divider"></li>
+             <a href="login.html">
+              <li
+               class="dropdown-item"><i class="icon-power mr-2"></i> 
+              Logout
+    
+            </li>
+            </a>
+           </ul>
+         </li>
+       </ul>
+     </nav>
+     </header>
+    <!--End topbar header-->
+
+    <div class="clearfix"></div>
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+
+        <div class="row " >
+          <div class="col-md-12">
+            <div class="tabbar ">
+              <div class="">
+                <div class="text-center  " data-aos="fade-down-right" data-aos-duration="1000">
+
+                  <h2 class="mb-5 chatt">Group Chat</h2>
+                </div>
+                <!-- <div class="container">
+                  <div class="row">
+                    <div class="col-md-9 "></div>
+                    <div class="col-md-3 ">
+                      <a href="index.html" class="homee ml-5 ">Home</a> > <span class="Schedule">My Schedule</span> 
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="frame">
+                      <div id="sidepanel">
+                        <div id="profile">
+                          <div class="wrap">
+                            <img id="profile-img" src="assets/images/person.PNG" class="online" alt="aaaaa" />
+                            <p>Mike Ross</p>
+                            <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
+                            <div id="status-options">
+                              <ul>
+                                <li id="status-online" class="active"><span class="status-circle"></span>
+                                  <p>Online</p>
+                                </li>
+                                <li id="status-away"><span class="status-circle"></span>
+                                  <p>Away</p>
+                                </li>
+                                <li id="status-busy"><span class="status-circle"></span>
+                                  <p>Busy</p>
+                                </li>
+                                <li id="status-offline"><span class="status-circle"></span>
+                                  <p>Offline</p>
+                                </li>
+                              </ul>
+                            </div>
+                            <div id="expanded" style="font-size: 15px;">
+                              <label for="twitter"><i class="fa-brands fa-facebook facee"></i></label>
+                              <input name="twitter" type="text" value="mikeross" />
+                              
+                              <label for="twitter"><i class="fa-brands fa-twitter facee"></i></label>
+                              <input name="twitter" type="text" value="ross81" />
+                              <label for="twitter"><i class="fa-brands fa-instagram facee"></i></i></label>
+                              <input name="twitter" type="text" value="mike.ross" />
+                            </div>
+                          </div>
+                        </div>
+                        <div id="search">
+                          <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
+                          <input type="text" placeholder="Search contacts..." />
+                        </div>
+                        <div id="contacts">
+                          <ul style="
+                          margin-left: -23px;
+                      ">
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status online"></span>
+                                <img src="http://emilcarlsson.se/assets/louislitt.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Louis Litt</p>
+                                  <p class="preview">You just got LITT up, Mike.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact active">
+                              <div class="wrap">
+                                <span class="contact-status busy"></span>
+                                <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Harvey Specter</p>
+                                  <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call
+                                    their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status away"></span>
+                                <img src="http://emilcarlsson.se/assets/rachelzane.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Rachel Zane</p>
+                                  <p class="preview">I was thinking that we could have chicken tonight, sounds good?</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status online"></span>
+                                <img src="http://emilcarlsson.se/assets/donnapaulsen.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Donna Paulsen</p>
+                                  <p class="preview">Mike, I know everything! I'm Donna..</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status busy"></span>
+                                <img src="http://emilcarlsson.se/assets/jessicapearson.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Jessica Pearson</p>
+                                  <p class="preview">Have you finished the draft on the Hinsenburg deal?</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status"></span>
+                                <img src="http://emilcarlsson.se/assets/haroldgunderson.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Harold Gunderson</p>
+                                  <p class="preview">Thanks Mike! :)</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status"></span>
+                                <img src="http://emilcarlsson.se/assets/danielhardman.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Daniel Hardman</p>
+                                  <p class="preview">We'll meet again, Mike. Tell Jessica I said 'Hi'.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status busy"></span>
+                                <img src="http://emilcarlsson.se/assets/katrinabennett.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Katrina Bennett</p>
+                                  <p class="preview">I've sent you the files for the Garrett trial.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status"></span>
+                                <img src="http://emilcarlsson.se/assets/charlesforstman.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Charles Forstman</p>
+                                  <p class="preview">Mike, this isn't over.</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="contact">
+                              <div class="wrap">
+                                <span class="contact-status"></span>
+                                <img src="http://emilcarlsson.se/assets/jonathansidwell.png" alt="" />
+                                <div class="meta">
+                                  <p class="name">Jonathan Sidwell</p>
+                                  <p class="preview"><span>You:</span> That's bullshit. This deal is solid.</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div id="bottom-bar">
+                          <button id="addcontact"><i class="fa fa-user-plus fa-fw " aria-hidden="true"></i>
+                             <span class="contacta mt-1">Add contact</span></button>
+                          <button id="settings"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>
+                            <span class="contacta">Settings</span></button>
+                        </div>
+                      </div>
+                      <div class="content" style="background-color: #132534;">
+                        <div class="contact-profile">
+                          <img class="mt-4" src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                          <p class="mt-4" style="font-size: 16px;font-weight: 700;">Harvey Specter</p>
+                          <div class="social-media mt-4">
+                            
+                            <i class="fa-brands fa-facebook fontaa"></i>
+                            <i class="fa-brands fa-twitter fontaa"></i>
+                            <i class="fa-brands fa-instagram fontaa"></i>
+                           
+                          </div>
+                        </div>
+                        <div class="messages">
+                          <ul>
+                            <li class="sent">
+                              <img  src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                              <p>How the hell am I supposed to get a jury to believe you when I am not even sure that I do?!</p>
+                            </li>
+                            <li class="replies">
+                              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                              <p>When you're backed against the wall, break the god damn thing down.</p>
+                            </li>
+                            <li class="replies">
+                              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                              <p>Excuses don't win championships.</p>
+                            </li>
+                            <li class="sent">
+                              <img  src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                              <p>Oh yeah, did Michael Jordan tell you that?</p>
+                            </li>
+                            <li class="replies">
+                              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                              <p>No, I told him that.</p>
+                            </li>
+                            <li class="replies">
+                              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                              <p>What are your choices when someone puts a gun to your head?</p>
+                            </li>
+                            <li class="sent">
+                              <img  src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+                              <p>What are you talking about? You do what they say or they shoot you.</p>
+                            </li>
+                            <li class="replies">
+                              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                              <p>Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="message-input">
+                          <div class="wrap">
+                          <input type="text" placeholder="Write your message..." />
+                          <!-- <i class="fa fa-paperclip attachment fontaa" aria-hidden="true"></i> -->
+                          <button class="submit">
+                            <!-- <i class="fa fa-paper-plane " aria-hidden="true"></i> -->
+                            <i class="fa-solid fa-arrow-right fontaa"></i>
+                          </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div><!--End Row-->
+
+
+
+
+
+      <!--start overlay-->
+      <div class="overlay toggle-menu"></div>
+      <!--end overlay-->
+
+    </div>
+    <!-- End container-fluid-->
+
+  </div><!--End content-wrapper-->
+  <!--Start Back To Top Button-->
+  <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+  <!--End Back To Top Button-->
+  <div class="calenderr">
+    <a href="celnderr.html">
+
+
+     
+    </a>
+  </div>
+
+  <!--Start footer-->
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="text-center">
+        Copyright
+        <span class="harvest">
+          Harvest.
+        </span>
+        Team
+      </div>
+    </div>
+  </footer> -->
+  <!--End footer-->
+
+  <!--start color switcher-->
+  <!-- <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div> -->
+  <!--end color switcher-->
+
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script>
+    // window.parent.document.body.style.zoom = 1;
+    // zoom
+
+    let x = new RdataTB('myTable', {
+      //RenderJSON:[], // Convert Json to Table html 
+      ShowSearch: true, // show search field,
+      ShowSelect: true, // show show select,
+      ShowPaginate: true, // show paginate ,
+      SelectionNumber: [5, 10, 20, 50, 100], //Change Option in Select
+      HideColumn: ["City"], // Hide column
+      ShowHighlight: false, // show Highlight if search
+      fixedTable: true, // fixed table
+      sortAnimate: false, // show animated if sorted
+      ShowTfoot: false,
+      ExcludeColumnExport: ["Name", "City"]
+    });
+
+  </script>
+  <script
+    src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script>$(".messages").animate({ scrollTop: $(document).height() }, "fast");
+
+    $("#profile-img").click(function () {
+      $("#status-options").toggleClass("active");
+    });
+
+    $(".expand-button").click(function () {
+      $("#profile").toggleClass("expanded");
+      $("#contacts").toggleClass("expanded");
+    });
+
+    $("#status-options ul li").click(function () {
+      $("#profile-img").removeClass();
+      $("#status-online").removeClass("active");
+      $("#status-away").removeClass("active");
+      $("#status-busy").removeClass("active");
+      $("#status-offline").removeClass("active");
+      $(this).addClass("active");
+
+      if ($("#status-online").hasClass("active")) {
+        $("#profile-img").addClass("online");
+      } else if ($("#status-away").hasClass("active")) {
+        $("#profile-img").addClass("away");
+      } else if ($("#status-busy").hasClass("active")) {
+        $("#profile-img").addClass("busy");
+      } else if ($("#status-offline").hasClass("active")) {
+        $("#profile-img").addClass("offline");
+      } else {
+        $("#profile-img").removeClass();
+      };
+
+      $("#status-options").removeClass("active");
+    });
+
+    function newMessage() {
+      message = $(".message-input input").val();
+      if ($.trim(message) == '') {
+        return false;
+      }
+      $('<li class="sent "><img style="margin-left:-15px;" src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+      $('.message-input input').val(null);
+      $('.contact.active .preview').html('<span>You: </span>' + message);
+      $(".messages").animate({ scrollTop: $(document).height() }, "fast");
+    };
+
+    $('.submit').click(function () {
+      newMessage();
+    });
+
+    $(window).on('keydown', function (e) {
+      if (e.which == 13) {
+        newMessage();
+        return false;
+      }
+    });
+
+  </script>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Animation js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+
+</body>
+
+</html>

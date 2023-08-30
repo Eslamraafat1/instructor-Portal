@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Instructor Portal</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet"/>
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link href="assets/images/logo.png" rel="icon">
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  
+</head>
+<style>
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+</style>
+
+<body class="bg-theme bg-theme1">
+
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+   <!-- end loader -->
+
+<!-- Start wrapper-->
+ <div id="wrapper">
+
+  <!--Start sidebar-wrapper-->
+  <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+    <div class="brand-logo">
+       <a href="index.html">
+       <img src="assets/images/logo.png" class="logo-icon" alt="logo icon">
+  
+       
+       <h5 class="logo-text ">Instructor's</h5>
+     </a>
+  </div>
+  <ul class="sidebar-menu do-nicescrol">
+     <li class="sidebar-header text-center text-white insto  "> <span><img src="assets/images/Capture.PNG" class="w-25 border-radiusss " alt=""></span> Mahmoud Sultan</li>
+     <hr>
+     <li>
+       <a href="index.html">
+         <i class="zmdi zmdi-view-dashboard"></i> <span>Home</span>
+       </a>
+     </li>
+  
+     <li>
+       <a href="profile.html">
+         <i class="zmdi zmdi-invert-colors"></i> <span>My Profile</span>
+       </a>
+     </li>
+  
+     <li>
+       <a href="forms.html">
+         <i class="zmdi zmdi-format-list-bulleted"></i> <span>My Schedule
+         </span>
+       </a>
+     </li>
+  
+     <li>
+       <a href="tables.html">
+         <i class="zmdi zmdi-grid"></i> <span>My Classes</span>
+       </a>
+     </li>
+  
+     <li>
+       <a href="calendar.html">
+         <i class="zmdi zmdi-calendar-check"></i> <span>Attendance</span>
+         <small class="badge float-right badge-light">New</small>
+       </a>
+     </li>
+  
+     <li>
+       <a href="icon.html">
+         <i class="zmdi zmdi-face"></i> <span>Exam Result</span>
+       </a>
+     </li>
+  
+     <li>
+       <a href="logiin.html" >
+         <i class="zmdi zmdi-lock"></i> <span>Final Rate</span>
+       </a>
+     </li>
+  
+      <li>
+       <a href="ratio.html" >
+         <i class="zmdi zmdi-account-circle"></i> <span>Ratio Reporting</span>
+       </a>
+     </li>
+      <li>
+       <a href="textChat.html" >
+        <i class="fa-solid fa-comments"></i> <span>Group Chat</span>
+       </a>
+     </li>
+  
+     <!-- <li class="sidebar-header">LABELS</li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
+     <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li> -->
+  
+   </ul>
+  
+  </div>
+  <!--End sidebar-wrapper-->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+  <nav class="navbar navbar-expand fixed-top">
+   <ul class="navbar-nav mr-auto align-items-center">
+     <li class="nav-item">
+       <a class="nav-link toggle-menu" href="javascript:void();">
+        <i class="icon-menu menu-icon"></i>
+      </a>
+     </li>
+     <li class="nav-item">
+       <form class="search-bar">
+         <input type="text" class="form-control" placeholder="Enter keywords">
+          <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+       </form>
+     </li>
+   </ul>
+      
+   <ul class="navbar-nav align-items-center right-nav-link">
+    
+     <!-- <li class="nav-item dropdown-lg">
+       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
+       <i class="fa fa-bell-o"></i></a>
+     </li> -->
+     <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+        <span class="user-profile"><i class="fa fa-envelope-open-o"></i></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right spelt">
+       <li class="dropdown-item user-details">
+        <a href="javaScript:void();">
+           <div class="media">
+            <div class="media-body">
+            </div>
+           </div>
+          </a>
+        </li>
+        <li>
+          <div class="text-center">
+            <h5 class="">Messages</h5>
+          </div>
+          <hr class="bg-info ">
+          <li>
+            <p class=" ml-2">1- Today another </p>
+          </li>
+          <li>
+            <p class=" ml-2 mr-2">2- Lorem, ipsum dolor sit   </p>
+          </li>
+          
+          
+        </li>
+      
+      </ul>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+        <span class="user-profile"><i class="fa fa-bell-o"></i></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right spelt">
+       <li class="dropdown-item user-details">
+        <a href="javaScript:void();">
+           <div class="media">
+            <div class="media-body">
+            </div>
+           </div>
+          </a>
+        </li>
+        <li>
+          <div class="text-center">
+            <h5 class="">Notificaitons</h5>
+          </div>
+          <hr class="bg-info ">
+          <li>
+            <p class=" ml-2">1- Today another course</p>
+          </li>
+          <li>
+            <p class=" ml-2 mr-2">2- Lorem, ipsum dolor sit amet consectetur </p>
+          </li>
+          
+          
+        </li>
+      
+      </ul>
+    </li>
+ 
+     
+     
+     <!-- <li class="nav-item language">
+       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
+       <ul class="dropdown-menu dropdown-menu-right">
+           
+       </ul>
+     </li> -->
+     <li class="nav-item">
+       <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+         <span class="user-profile"><img src="assets/images/Capture.PNG" class="img-circle" alt="user avatar"></span>
+       </a>
+       <ul class="dropdown-menu dropdown-menu-right">
+        <li class="dropdown-item user-details">
+         <a href="profile.html">
+            <div class="media">
+              <div class="avatar"><img class="align-self-start mr-3" src="assets/images/Capture.PNG" alt="user avatar"></div>
+             <div class="media-body">
+             <h6 class="mt-2 user-title">Mahmoud Sultan</h6>
+             <p class="user-subtitle">Mahmoud.32@example.com</p>
+             </div>
+            </div>
+           </a>
+         </li>
+         <li class="dropdown-divider"></li>
+         <a href="textChat.html">
+             <li class="dropdown-item">
+            <i class="icon-envelope mr-2"></i>
+            Inbox
+          </li>
+          </a> 
+         <li class="dropdown-divider"></li>
+         <a href="profile.html">
+            <li class="dropdown-item"><i class="icon-wallet mr-2"></i>
+            Account
+          </li>
+          </a>  
+         <li class="dropdown-divider"></li>
+         <!-- <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li> -->
+         <li class="dropdown-divider"></li>
+         <a href="login.html">
+          <li
+           class="dropdown-item"><i class="icon-power mr-2"></i> 
+          Logout
+
+        </li>
+        </a>
+       </ul>
+     </li>
+   </ul>
+ </nav>
+ </header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+      <div class="row mt-3">
+        <div class="col-lg-4">
+           <div class="card profile-card-2">
+            
+            <div class="card-img-block">
+                <!-- <img class="img-fluid" src="https://via.placeholder.com/800x500" alt="Card image cap"> -->
+            </div>
+            <div class="card-body pt-5 text-center">
+                <img src="assets/images/Capture.PNG" alt="profile-image" class="profile">
+                <h5 class="card-title">Mahmoud Sultan</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="icon-block">
+                  <a href="javascript:void();"><i class="fa-brands fa-facebook icona"></i></a>
+				          <a href="javascript:void();"> <i class="fa-brands fa-twitter icona"></i></a>
+				          <a href="javascript:void();"> <i class="fa-brands fa-google icona"></i></a>
+                </div>
+            </div>
+
+            <div class="card-body border-top border-light">
+                 <div class="media align-items-center">
+                   <!-- <div>
+                       <img src="assets/images/timeline/html5.svg" class="skill-img" alt="skill img">
+                   </div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>HTML5 <span class="float-right">65%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:65%"></div>
+                         </div>
+                        </div>                   
+                    </div> -->
+                    <h5>
+                      Staff ID: <span class="staff ml-4">360</span>
+                    </h5>
+                  </div>
+                  <hr>
+                  <div class="media align-items-center">
+                   <!-- <div><img src="assets/images/timeline/bootstrap-4.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>Bootstrap 4 <span class="float-right">50%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:50%"></div>
+                         </div>
+                        </div>                   
+                    </div> -->
+                    <h5>
+                      Job Title: <span class="staff ml-4">ESL Instructor</span>
+                    </h5>
+                  </div>
+                   <hr>
+                  <div class="media align-items-center">
+                   <!-- <div><img src="assets/images/timeline/angular-icon.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>AngularJS <span class="float-right">70%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:70%"></div>
+                         </div>
+                        </div>                   
+                    </div> -->
+                    <h5>
+                      Department: <span class="staff ml-2">Technical </span>
+                    </h5>
+                  </div>
+                    <hr>
+                  <div class="media align-items-center">
+                   <!-- <div><img src="assets/images/timeline/react.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>React JS <span class="float-right">35%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:35%"></div>
+                         </div>
+                        </div>                   
+                    </div> -->
+                    <h5>
+                      Branch: <span class="staff ml-5">Maadi Branch  </span>
+                    </h5>
+                  </div>
+                    <hr>
+                  <div class="media align-items-center">
+                   <!-- <div><img src="assets/images/timeline/react.svg" class="skill-img" alt="skill img"></div>
+                     <div class="media-body text-left ml-3">
+                       <div class="progress-wrapper">
+                         <p>React JS <span class="float-right">35%</span></p>
+                         <div class="progress" style="height: 5px;">
+                          <div class="progress-bar" style="width:35%"></div>
+                         </div>
+                        </div>                   
+                    </div> -->
+                    <h5>
+                      Up to Level: <span class="staff ml-3">3  </span>
+                    </h5>
+                  </div>
+                  <hr>
+                  <h5>
+                    Teaching Band: <span class="staff ml-3">Good</span>
+                  </h5>
+                  
+              </div>
+        </div>
+
+        </div>
+
+        <div class="col-lg-8">
+           <div class="card">
+            <div class="card-body">
+            <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#profile" data-toggle="pill" class="nav-link active"><i class="icon-user"></i> <span class="hidden-xs">Profile</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#messages" data-toggle="pill" class="nav-link"><i class="icon-envelope-open"></i> <span class="hidden-xs">Messages</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#edit" data-toggle="pill" class="nav-link"><i class="icon-note"></i> <span class="hidden-xs">Edit</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#Vacations" data-toggle="pill" class="nav-link"><i class="fa-brands fa-squarespace"></i> <span class="hidden-xs">Vacations</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#RESIGNATION" data-toggle="pill" class="nav-link"><i class="fa-solid fa-file"></i> <span class="hidden-xs">Resignation</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#Change" data-toggle="pill" class="nav-link"><i class="fa-regular fa-bell"></i> <span class="hidden-xs">Change Password</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void();" data-target="#Documents" data-toggle="pill" class="nav-link"><i class="fa-brands fa-slack"></i> <span class="hidden-xs">Documents</span></a>
+                </li>
+            </ul>
+            <div class="tab-content p-3">
+                <div class="tab-pane active" id="profile">
+                  <div class="text-center">
+
+                    <h4 class="mb-3">User Profile</h4>
+                  </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                           
+                            <br>
+                            <p>
+                              <i class="fa fa-phone"></i>  <span class="mobilee">Mobile :</span>  01003951160
+                            </p>
+                            <p>
+                              <i class="fa fa-envelope"></i> <span class="mobilee">Email:</span>     Mahmoud@harvestcollege.co.uk
+                            </p>
+                            <p>
+                              <i class="fa fa-home"></i>   <span class="mobilee">Address:</span>    Helwan 24 street
+                            </p>
+                            <div class="text-right ">
+                              <h5 class="ml-5">
+                               Emergency Contact
+                              </h5>
+                            </div>
+                            <p>
+                              <i class="fa fa-user"></i>   <span class="mobilee">Name:</span>    Heba
+                            </p>
+                            <p>
+                              <i class="fa fa-envelope"></i>   <span class="mobilee">Relation:</span>    Manger
+                            </p>
+                            <p>
+                              <i class="fa fa-phone"></i>   <span class="mobilee">Phone:</span>   01141273154
+                            </p>
+                        </div>
+                        
+                        <!-- <div class="col-md-6">
+                            <h6>Recent badges</h6>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">html5</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">react</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">codeply</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">angularjs</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">css3</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">jquery</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">bootstrap</a>
+                            <a href="javascript:void();" class="badge badge-dark badge-pill">responsive-design</a>
+                            <hr>
+                            <span class="badge badge-primary"><i class="fa fa-user"></i> 900 Followers</span>
+                            <span class="badge badge-success"><i class="fa fa-cog"></i> 43 Forks</span>
+                            <span class="badge badge-danger"><i class="fa fa-eye"></i> 245 Views</span>
+                        </div> -->
+                        <div class="hrline"></div>
+                        <div class="col-md-12 mt-3">
+                            <h5 class="mt-2 mb-3"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
+                             <div class="table-responsive">
+                            <table class="table table-hover table-striped">
+                                <tbody>                                    
+                                    <tr>
+                                        <td>
+                                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane" id="messages">
+                    <div class="alert alert-info alert-dismissible" role="alert">
+				   <button type="button" class="close" data-dismiss="alert">&times;</button>
+				    <div class="alert-icon">
+					 <i class="icon-info"></i>
+				    </div>
+				    <div class="alert-message">
+				      <span><strong>Info!</strong> Lorem Ipsum is simply dummy text.</span>
+				    </div>
+                  </div>
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <tbody>                                    
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">3 hrs ago</span> Here is your a link to the latest summary report from the..
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">Yesterday</span> There has been a request on your account since that was..
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">Sunday</span> Level 2 group on Sunday 03-00 pm
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">Tuesday</span> group on Tuesday 06-00 pm 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="float-right font-weight-bold">9/4</span> Maxamillion ais the fix for tibulum tincidunt ullamcorper eros. 
+                                </td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane" id="edit">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="Mahmoud">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Mobile</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="number" value="0101010101010">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Phone</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="number" value="0101010101010">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" value="Mahmoud@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="url" value="">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="" placeholder="Street">
+                            </div>
+                        </div> -->
+                        <!-- <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" value="" placeholder="City">
+                            </div>
+                            <div class="col-lg-3">
+                                <input class="form-control" type="text" value="" placeholder="State">
+                            </div>
+                        </div> -->
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Upload image:</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="file">
+                            </div>
+                        </div>
+                        <hr>
+                        <h3 class="mb-3">Emergency Contact</h3>
+                       <hr>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="Mahmoud">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Relation</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="Manger">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="password" value="11111122333">
+                            </div>
+                        </div> -->
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Phone</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="number" value="11111122333">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="reset" class="btn btn-white" value="Cancel">
+                                <input type="button" class="btn btn-info" value="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="Vacations">
+                  <div class="container">
+                    <div class="row ">
+                      <div class="text-center w-100 border-info">
+                        <h3>Vacations & Leaves Credit</h3>
+                        <br>
+                      </div>
+                      <hr>
+                      <br>
+                      <div class="col-md-12 ">
+                        <table>
+                          <tr>
+                            <th>Annual</th>
+                            <th>Casual </th>
+                            <th>Sick</th>
+                            <th>Year</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
+                      <hr>
+                      <div class="col-md-12 mt-5">
+                        <table>
+                          <tr>
+                            <th>Start Date	</th>
+                            <th>End Date </th>
+                            <th># of Days	</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </table>
+                      </div>
+                      
+                      <!-- <div class="col-md-3">
+                        <h4>Annual</h4>
+                      </div>
+                      <div class="col-md-3">
+                        <h4>Casual</h4>
+                      </div>
+                      <div class="col-md-3">
+                        <h4>Sick</h4>
+                      </div>
+                      <div class="col-md-3">
+                        <h4>Year</h4>
+                      </div> -->
+                      <br>
+                      <br>
+                      <hr>
+                      
+                      <div class="col-md-12">
+                        
+                       
+                        <div class="text-center mt-4">
+                          <h4>Request New Vacation </h4>
+                        </div>
+                        <div>
+                          <h5>Start date:</h5>
+                          <input type="date" class="w-75 p-1 ">
+                          <br>
+                          <br>
+                          <h5>End date:</h5>
+                          <input type="date" class="w-75 p-1 ">
+                          <br>
+                          <br>
+                          <h5># of date:</h5>
+                          <input type="date" class="w-75 p-1 ">
+                          <br>
+                          <br>
+                          <h5>Type</h5>
+                          <select name="form-control" class="bg-white optioonn " id="">
+                            <option class="bg-white" value="Annual">Annual</option>
+                            <option class="bg-white" value="Casual">Casual</option>
+                            <option class="bg-white" value="Sick">Sick</option>
+                          </select>
+                        </div>
+                        <div class="">
+                          <button class="btnn"> Save
+                        </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </div>
+                
+                <div class="tab-pane " id="RESIGNATION">
+                  <div class="text-center">
+
+                    <h5>Resignation</h5>
+                  </div>
+                    <div class="row">
+                       <div class="col-md-2">
+                        <h4>Branch</h4>
+                        <select name="form-control" class="bg-white optioonn " id="">
+                          <option class="bg-white" value="Annual">Nasr City Branch</option>
+                          <option class="bg-white" value="Casual">Dokki Branch</option>
+                          <option class="bg-white" value="Sick">Haram Branch</option>
+                          <option class="bg-white" value="Sick">Shubra Branch</option>
+                          <option class="bg-white" value="Sick">Maadi Branch</option>
+                          <option class="bg-white" value="Sick">Zayed Branch</option>
+                          <option class="bg-white" value="Sick">New Cairo Branch</option>
+                          <option class="bg-white" value="Sick">Call Center</option>
+                          <option class="bg-white" value="Sick">Alex Branch</option>
+                          <option class="bg-white" value="Sick">Online Branch</option>
+                          <option class="bg-white" value="Sick">Test Branch</option>
+                          <option class="bg-white" value="Sick">OutDoor</option>
+                          <option class="bg-white" value="Sick">P.t Branch</option>
+                          <option class="bg-white" value="Sick">H.Q</option>
+                          <option class="bg-white" value="Sick">Heliopolis Branch</option>
+                          <option class="bg-white" value="Sick">Corporate</option>
+                          <option class="bg-white" value="Sick">SCIB Paints</option>
+                          <option class="bg-white" value="Sick">Hyper One</option>
+                        </select>
+
+                      </div>
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4 ">
+                        <h4>Reason:</h4>
+                        <select name="form-control" class="bg-white optioonn " id="">
+                          <option class="bg-white" value="Annual">Travel</option>
+                          <option class="bg-white" value="Casual">New Job Offer</option>
+                          <option class="bg-white" value="Sick">Other</option>
+                        </select>
+                      </div>
+                      <div class="col-md-5 mt-3">
+                        <h4>Hire Date:</h4>
+                        <input type="date" class="w-75 p-1 ">
+                      </div>
+                      <div class="col-md-5 mt-3">
+                        <h4>Date Of Reason:</h4>
+                        <input type="date" class="w-75 p-1 ">
+                      </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane " id="Change">
+                  <div class="text-center">
+
+                    <h5>Change Password</h5>
+                  </div>
+                    <div class="row">
+                     <div class="col-md-12">
+                      <h4>Password:</h4>
+                      <div class="form-group row">
+                        
+                        <div class="col-lg-9">
+                            <input class="form-control" type="password" value="11111122333">
+                        </div>
+                    </div>
+
+                     </div>
+                     <div class="col-md-12">
+                      <h5>Password Confirmation:</h5>
+                      <div class="form-group row">
+                        
+                        <div class="col-lg-9">
+                            <input class="form-control" type="password" value="11111122333">
+                        </div>
+                    </div>
+
+                     </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane " id="Documents">
+                  <div class="text-center">
+
+                    <h3>Documents</h3>
+                    <hr>
+                  </div>
+                    <div class="row">
+                  <div class="col-md-6">
+                    <h5>Academic Certificate:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6">
+                    <h5>Birth Certificate:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Copy of ID / Passport:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Number of insurance:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Original Criminal Status Record:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Labor Office Notice:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Original Educational Certificate:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Original Certificate of Military Status (Males only):</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>Social Insurance Stamp:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+                  <div class="col-md-6 mt-3">
+                    <h5>C.V:</h5>
+                    <button class="btn btn-info">Download</button>
+                  </div>
+
+                    </div>
+                    <!--/row-->
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+        
+    </div>
+
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+	
+    </div>
+    <!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+    <div class="calenderr">
+      <a href="celnderr.html">
+
+      
+      <button class="btn btn-info cender">
+        <i class="fa-regular fa-calendar-days"></i>
+      </button>
+    </a>
+    </div>
+	
+	<!--Start footer-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright 
+          <span class="harvest">
+            Harvest
+          </span>
+          team
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+	
+	<!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div>
+  <!--end color switcher-->
+   
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+	
+</body>
+</html>
